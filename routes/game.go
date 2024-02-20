@@ -19,6 +19,7 @@ func Updatescore(c *fiber.Ctx) error {
 	defer rdb.Close()
 
 	key := "user:" + email
+
 	userJSON, err := rdb.HGet(context.Background(), key, "userJSON").Result()
 	if err != nil {
 

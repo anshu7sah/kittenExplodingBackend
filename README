@@ -1,0 +1,6 @@
+1. Please copy the content of .env.example to .env file in root directory
+   .env file contains Address, username, and password of clould redis client which you can get by login to redis in redis.io and click on try cloud.
+2. Then from the main directory run the main.go file using go run main.go
+3. If any error occurs regarding the dependencies, try checking whether go is installed in your system or not. Additionally you can use go mod tidy which will automatically install the dependencies not installed in the system.
+
+4. server will start running on port 4000
